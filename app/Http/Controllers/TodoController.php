@@ -41,7 +41,8 @@ class TodoController extends Controller
     {
         $data = $request->validate([
             'title' => 'sometimes|string|max:255',
-            'status' => 'sometimes|boolean',
+            'description' => 'sometimes|nullable|string|max:500',
+            'status' => 'nullable|in:pending,done',
         ]);
 
         $todo = $updateTodo->execute($id, $data);

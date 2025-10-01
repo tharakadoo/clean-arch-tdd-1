@@ -3,6 +3,7 @@
 namespace App\UseCases;
 
 use App\Interfaces\TodoRepositoryInterface;
+use App\Models\Todo;
 
 class DeleteTodo
 {
