@@ -54,9 +54,28 @@ php artisan serve
 ---
 
 ## Usage
-Create a Todo: POST /api/todos
+- Create a Todo: POST /api/todos
 ```bash
 {
   "title": "Learn TDD in Laravel"
 }
 ```
+
+- Get all Todos: GET /api/todos
+- Update a Todo: PUT /api/todos/{id}
+```bash
+{
+  "title": "Updated title",
+  "status": "done"
+}
+```
+- Delete a Todo: DELETE /api/todos/{id}
+
+## Testing
+Run all tests (Unit + Feature):
+```bash
+php artisan test
+```
+
+
+
