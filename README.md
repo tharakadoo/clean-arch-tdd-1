@@ -71,6 +71,8 @@ php artisan serve
 ```
 - Delete a Todo: DELETE /api/todos/{id}
 
+Postman Collection Attached to repo. (Todo-clean-arch.postman_collection.json)
+
 ## Testing
 Run all tests (Unit + Feature):
 ```bash
