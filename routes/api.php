@@ -8,4 +8,4 @@ Route::get('/user', function (Request $request) {
     return $request->user();
 })->middleware('auth:sanctum');
 
-Route::post('/todos', [TodoController::class, 'store']);
+Route::apiResource('todos', TodoController::class);

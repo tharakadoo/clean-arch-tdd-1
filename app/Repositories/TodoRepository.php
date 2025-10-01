@@ -26,15 +26,18 @@ class TodoRepository implements TodoRepositoryInterface
         return TodoModel::findOrFail($id);
     }
 
-    public function update(int $id, array $data)
+    public function update(int $id, array $data): ?TodoModel
     {
-        $todo = TodoModel::findOrFail($id);
+        $todo = TodoModel::find($id);
+        if (!$todo) return null;
+
         $todo->update($data);
         return $todo;
     }
 
-    public function delete(int $id)
+    public function delete(int $id): bool
     {
-        return TodoModel::destroy($id);
+        $todo = TodoModel::find($id);
+        return $todo ? $todo->delete() : false;
     }
 }

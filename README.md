@@ -4,7 +4,7 @@ This is a simple **Todo app** implemented using **Clean Architecture** principle
 
 Clean Architecture separates the system into layers:
 
-- **Entities (Core)**: Business logic (`Todo` entity)
+- **Entities **: Business logic (`Todo` entity)
 - **Use Cases**: Application-specific actions (`CreateTodo`)
 - **Interfaces**: Contracts and controllers (`TodoRepositoryInterface`, `TodoController`)
 - **Infrastructure**: Eloquent repository (`EloquentTodoRepository`)
@@ -14,7 +14,7 @@ Clean Architecture separates the system into layers:
 ## Features
 
 - Create Todos with title and status
-- Fully layered architecture (Core, Use Cases, Interfaces, Infrastructure)
+- Fully layered architecture (Entities, Use Cases, Interfaces, Infrastructure)
 - TDD-ready: Unit and Feature tests included
 - Flexible: Swap database or repository without changing core logic
 
