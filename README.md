@@ -50,8 +50,13 @@ php artisan migrate
 
 # Start server
 php artisan serve
-
+ ```
 ---
 
 ## Usage
 Create a Todo: POST /api/todos
+```bash
+{
+  "title": "Learn TDD in Laravel"
+}
+```
